@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu Filosófico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- MENU INICIAL -->
+  <div class="menu-container" id="menu">
+    <h1>Escolha uma Sessão</h1>
+    <div class="menu-options">
+      <div class="menu-card" id="certificado-card" onclick="mostrarCertificado()" style="display: none;">
+  <img src="https://cdn-icons-png.flaticon.com/512/8182/8182802.png" alt="Certificado" />
+  <span>CERTIFICADO</span>
+</div>
+
+      <div class="menu-card" onclick="iniciarEtica()">
+        <img src="https://cdn-icons-png.flaticon.com/512/1183/1183617.png" alt="Ética" />
+        <span>ÉTICA</span>
+      </div>
+
+      <div class="menu-card" onclick="iniciarLogica()">
+        <img src="https://cdn-icons-png.flaticon.com/512/2784/2784420.png" alt="Lógica" />
+        <span>LÓGICA</span>
+      </div>
+
+      <div class="menu-card" onclick="iniciarMetafisica()">
+        <img src="https://cdn-icons-png.flaticon.com/512/3199/3199551.png" alt="Metafísica" />
+        <span>METAFÍSICA</span>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="certificado" width="800" height="600" style="display:none; margin: 0 auto; background: url('certificado-base.png') center/cover no-repeat;"></canvas>
+
+
+  <!-- MÓDULO ÉTICA -->
+  <div class="app-container" id="app" style="display: none;">
+    <div class="progress-bar" id="progresso"></div>
+    <div id="pergunta"></div>
+    <div id="botoes" class="botao-box"></div>
+    <div id="feedback" class="feedback"></div>
+    <button id="proxima" onclick="proximaQuestao()" style="display:none;">Próxima ▶</button>
+    <button id="voltar-menu-etica" onclick="voltarMenu()" style="display:none;">⬅ Voltar ao Menu</button>
+  </div>
+
+  <!-- MÓDULO LÓGICA -->
+  <div class="app-container logica" id="app-logica" style="display: none;">
+    <div class="progress-bar" id="progresso-logica"></div>
+    <div id="pergunta-logica"></div>
+    <div id="botoes-logica" class="botao-box"></div>
+    <div id="feedback-logica" class="feedback"></div>
+    <button id="proxima-logica" onclick="proximaQuestaoLogica()" style="display:none;">Próxima ▶</button>
+    <button id="voltar-menu-logica" onclick="voltarMenu()" style="display:none;">⬅ Voltar ao Menu</button>
+  </div>
+
+  <!-- MÓDULO METAFÍSICA -->
+  <div class="app-container metafisica" id="app-metafisica" style="display: none;">
+    <div class="progress-bar" id="progresso-metafisica"></div>
+    <div id="pergunta-metafisica"></div>
+    <div id="botoes-metafisica" class="botao-box"></div>
+    <div id="feedback-metafisica" class="feedback"></div>
+    <button id="proxima-metafisica" onclick="proximaQuestaoMetafisica()" style="display:none;">Próxima ▶</button>
+    <button id="voltar-menu-metafisica" onclick="voltarMenu()" style="display:none;">⬅ Voltar ao Menu</button>
+  </div>
+
+  <script src="etica.js"></script>
+</body>
+</html>
