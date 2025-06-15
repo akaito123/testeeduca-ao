@@ -1,0 +1,136 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #263238, #1b1f20);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.menu-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.menu-card {
+  background: #ffffff10;
+  border-radius: 15px;
+  padding: 20px;
+  width: 140px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  backdrop-filter: blur(8px);
+  border: 1px solid #ffffff30;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  background: #ffffff20;
+}
+
+.menu-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.menu-card span {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Conteúdo das sessões */
+.app-container {
+  background: #ffffff10;
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
+  margin: 50px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.progress-bar {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #80cbc4;
+}
+
+.botao-box button {
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #26a69a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-box button:hover {
+  background-color: #00796b;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Botões de próxima/voltar */
+button[id^="proxima"],
+button[id^="voltar-menu"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00897b;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estilo para LÓGICA */
+.app-container.logica {
+  background: #0d47a1;
+  border: 2px solid #64b5f6;
+}
+
+#app-logica .progress-bar {
+  color: #bbdefb;
+}
+
+#app-logica button {
+  background-color: #2196f3;
+}
+
+#app-logica button:hover {
+  background-color: #1976d2;
+}
+
+/* Estilo para METAFÍSICA */
+.app-container.metafisica {
+  background: #4a148c;
+  border: 2px solid #ce93d8;
+}
+
+#app-metafisica .progress-bar {
+  color: #e1bee7;
+}
+
+#app-metafisica button {
+  background-color: #ab47bc;
+}
+
+#app-metafisica button:hover {
+  background-color: #8e24aa;
+}
